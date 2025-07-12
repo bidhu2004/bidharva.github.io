@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISUALS BY BIDHARVA </title>
+    <meta name="description" content="VISUALS BY BIDHARVA- Graphic Designer, Motion Designer, and 3D Animator.">
+    <link rel="icon" href="https://placehold.co/32x32/00008B/FFFFFF?text=B">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-blue: #00008B;
+            --white: #FFFFFF;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--dark-blue);
+            color: var(--white);
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3, h4, p {
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .main-container {
+            min-height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .section {
+            padding: 80px 64px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+        }
+
+        .hero-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 90vh;
+            width: 100%;
+            max-width: 1440px;
+        }
+
+        .hero-title-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+        
+        .hero-title h1 {
+            font-size: 14vw;
+            line-height: 0.8;
+            font-weight: 400;
+            letter-spacing: -7px;
+            color: var(--white);
+            text-transform: uppercase;
+        }
+
+        .hero-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .hero-links a {
+            padding: 12px 24px;
+            border-radius: 99px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--white);
+            color: var(--white);
+            align-items: center;
+            font-size: 16px;
+            flex: auto;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero-links a:hover {
+            background-color: var(--white);
+            color: var(--dark-blue);
+        }
+
+        .hero-description {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .hero-description-left h3,
+        .hero-description-right h3 {
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -1.5px;
+        }
+        
+        .hero-description-left p {
+            margin-top: 24px;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .hero-description-right {
+           max-width: 50%;
+        }
+
+
+        /* About Section */
+        .about-section {
+            background-color: var(--white);
+            color: var(--dark-blue);
+            border-top-left-radius: 88px;
+            border-top-right-radius: 88px;
+            padding: 64px;
+        }
+
+        .about-container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .about-title h2 {
+            font-size: 80px;
+            line-height: 1.1;
+            letter-spacing: -4.5px;
+            font-weight: 400;
+            max-width: 80%;
+        }
+
+        .about-description {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 64px;
+        }
+
+        .about-description p {
+            font-size: 32px;
+            line-height: 1.25;
+            letter-spacing: -2.5px;
+            font-weight: 400;
+            max-width: 55%;
+        }
+        
+        /* Footer */
+        .footer-section {
+            background-color: var(--white);
+            color: var(--dark-blue);
+            padding: 64px;
+        }
+        
+        .footer-container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 64px;
+        }
+
+        .footer-title h2 {
+            font-size: 80px;
+            line-height: 1.1;
+            letter-spacing: -4.5px;
+            font-weight: 400;
+        }
+
+        .footer-title .star-icon {
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+        }
+        
+        .footer-title .star-icon svg path {
+            fill: var(--dark-blue);
+        }
+
+        .footer-social-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .footer-social-links a {
+            padding: 12px 32px;
+            border: 1px solid var(--dark-blue);
+            border-radius: 99px;
+            font-size: 48px;
+            font-weight: 400;
+            letter-spacing: -1.5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .footer-social-links a:hover {
+            background-color: var(--dark-blue);
+            color: var(--white);
+        }
+        
+        .footer-marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 120px;
+            padding: 20px 0;
+        }
+        
+        .footer-marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+            font-size: 12vw;
+            line-height: 0.8;
+            font-weight: 400;
+            letter-spacing: -7px;
+            color: var(--dark-blue);
+            text-transform: uppercase;
+        }
+        
+        .footer-marquee-content .star-icon-marquee {
+            display: inline-block;
+            width: 10vw;
+            height: 10vw;
+            margin: 0 32px;
+            vertical-align: middle;
+        }
+        
+        .footer-marquee-content .star-icon-marquee svg path {
+            fill: var(--dark-blue);
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 809px) {
+            .section, .about-section, .footer-section {
+                padding: 40px 24px;
+            }
+
+            .hero-title-links {
+                flex-direction: column;
+                gap: 32px;
+            }
+
+            .hero-description {
+                flex-direction: column;
+                gap: 120px;
+            }
+            
+            .hero-description-right {
+                max-width: 100%;
+            }
+
+            .hero-description-left h3, .hero-description-right h3 {
+                font-size: 41px;
+            }
+            
+            .about-title h2 {
+                font-size: 51px;
+                max-width: 100%;
+            }
+            
+            .about-description {
+                margin-top: 40px;
+            }
+
+            .about-description p {
+                font-size: 20px;
+                max-width: 100%;
+            }
+            
+            .footer-title h2 {
+                font-size: 51px;
+            }
+            
+            .footer-title .star-icon {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .footer-social-links a {
+                font-size: 24px;
+                padding: 8px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <section class="section hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-title-links">
+                    <div class="hero-title">
+                        <h1>I’m Bidharva</h1>
+                        <h1>Designer/25</h1>
+                    </div>
+                    <div class="hero-links">
+                        <a href="#contact">View Work</a>
+                    </div>
+                </div>
+                <div class="hero-description">
+                    <div class="hero-description-left">
+                        <h3>Gateway</h3>
+                        <p>LAST UPDATE &starf; 2025</p>
+                        <p>&copy; VISUALS BY BIDHARVA</p>
+                    </div>
+                    <div class="hero-description-right">
+                        <h3>My work blends branding, motion, and 3D design.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <div class="about-title">
+                    <h2>Enhancing a brand's digital presence by merging practicality and design elegance.</h2>
+                </div>
+                <div class="about-description">
+                    <p>See ongoing projects and design insights on my Instagram.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-section" id="contact">
+            <div class="footer-container">
+                <div class="footer-title">
+                    <h2>Get in touch</h2>
+                    <div class="star-icon">
+                        <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M93.7509 50.0009C93.7608 51.2826 93.3712 52.5357 92.6361 53.5858C91.901 54.6359 90.8571 55.4309 89.6493 55.8602L64.8681 64.872L55.8602 89.6493C55.4163 90.8454 54.6169 91.877 53.5694 92.6055C52.522 93.3339 51.2767 93.7244 50.0009 93.7244C48.725 93.7244 47.4797 93.3339 46.4323 92.6055C45.3849 91.877 44.5855 90.8454 44.1415 89.6493L35.1298 64.8446L10.3524 55.8602C9.15633 55.4163 8.12475 54.6169 7.39628 53.5694C6.66781 52.522 6.27734 51.2767 6.27734 50.0009C6.27734 48.725 6.66781 47.4797 7.39628 46.4323C8.12475 45.3849 9.15633 44.5855 10.3524 44.1415L35.1571 35.1298L44.1415 10.3524C44.5855 9.15633 45.3849 8.12475 46.4323 7.39628C47.4797 6.66781 48.725 6.27734 50.0009 6.27734C51.2767 6.27734 52.522 6.66781 53.5694 7.39628C54.6169 8.12475 55.4163 9.15633 55.8602 10.3524L64.872 35.1571L89.6493 44.1415C90.8571 44.5709 91.901 45.3659 92.6361 46.416C93.3712 47.4661 93.7608 48.7191 93.7509 50.0009Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="footer-social-links">
+                    <a href="mailto:bidharvadoesmotion@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/bidharva/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.behance.net/bakchmst1" target="_blank" rel="noopener">Behance</a>
+                    <a href="https://www.instagram.com/visualsbybidharva/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://cdn.fbsbx.com/v/t59.2708-21/504024822_753916373870746_8719796222046409606_n.pdf/CV-Bidharva-Bhattarai.pdf?_nc_cat=108&ccb=1-7&_nc_sid=2b0e22&_nc_ohc=XDbN9pZ5pzgQ7kNvwGiV392&_nc_oc=AdlUSeaX_5STQod9Yl1kWHNt1bh3rT4OZLa2YoVq_jt5Z_0Vh4_Q73XfxLQWx2dcIr9-ZULIQ01cW7i5v4pfxP8y&_nc_zt=7&_nc_ht=cdn.fbsbx.com&_nc_gid=D7316B3C36zaS2HAsrjgTw&oh=03_Q7cD2wEFoVnqCLYGYTfGymRr69hz-S7IgZvsSupoANfhvJjNIA&oe=6873C81E&dl=1&fbclid=IwY2xjawLe0GhleHRuA2FlbQIxMQBicmlkETAzc3FJbUN0THlxeFF5SW92AR7h1ZvCeMVh3sLLfzh3l9HwWFJ3xByIiggIYU-dBleyaA3blaX3D7Xcl58Zzg_aem_g4f4ZKuOQjy4RFiWTJ6ccA" target="_blank" rel="noopener">CV</a>
+                </div>
+            </div>
+             <div class="footer-marquee">
+                <div class="footer-marquee-content">
+                    <span>BIDHARVADOESMOTION@GMAIL.COM</span>
+                    <div class="star-icon-marquee">
+                         <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M93.7509 50.0009C93.7608 51.2826 93.3712 52.5357 92.6361 53.5858C91.901 54.6359 90.8571 55.4309 89.6493 55.8602L64.8681 64.872L55.8602 89.6493C55.4163 90.8454 54.6169 91.877 53.5694 92.6055C52.522 93.3339 51.2767 93.7244 50.0009 93.7244C48.725 93.7244 47.4797 93.3339 46.4323 92.6055C45.3849 91.877 44.5855 90.8454 44.1415 89.6493L35.1298 64.8446L10.3524 55.8602C9.15633 55.4163 8.12475 54.6169 7.39628 53.5694C6.66781 52.522 6.27734 51.2767 6.27734 50.0009C6.27734 48.725 6.66781 47.4797 7.39628 46.4323C8.12475 45.3849 9.15633 44.5855 10.3524 44.1415L35.1571 35.1298L44.1415 10.3524C44.5855 9.15633 45.3849 8.12475 46.4323 7.39628C47.4797 6.66781 48.725 6.27734 50.0009 6.27734C51.2767 6.27734 52.522 6.66781 53.5694 7.39628C54.6169 8.12475 55.4163 9.15633 55.8602 10.3524L64.872 35.1571L89.6493 44.1415C90.8571 44.5709 91.901 45.3659 92.6361 46.416C93.3712 47.4661 93.7608 48.7191 93.7509 50.0009Z"/>
+                        </svg>
+                    </div>
+                     <span>BIDHARVADOESMOTION@GMAIL.COM</span>
+                     <div class="star-icon-marquee">
+                         <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M93.7509 50.0009C93.7608 51.2826 93.3712 52.5357 92.6361 53.5858C91.901 54.6359 90.8571 55.4309 89.6493 55.8602L64.8681 64.872L55.8602 89.6493C55.4163 90.8454 54.6169 91.877 53.5694 92.6055C52.522 93.3339 51.2767 93.7244 50.0009 93.7244C48.725 93.7244 47.4797 93.3339 46.4323 92.6055C45.3849 91.877 44.5855 90.8454 44.1415 89.6493L35.1298 64.8446L10.3524 55.8602C9.15633 55.4163 8.12475 54.6169 7.39628 53.5694C6.66781 52.522 6.27734 51.2767 6.27734 50.0009C6.27734 48.725 6.66781 47.4797 7.39628 46.4323C8.12475 45.3849 9.15633 44.5855 10.3524 44.1415L35.1571 35.1298L44.1415 10.3524C44.5855 9.15633 45.3849 8.12475 46.4323 7.39628C47.4797 6.66781 48.725 6.27734 50.0009 6.27734C51.2767 6.27734 52.522 6.66781 53.5694 7.39628C54.6169 8.12475 55.4163 9.15633 55.8602 10.3524L64.872 35.1571L89.6493 44.1415C90.8571 44.5709 91.901 45.3659 92.6361 46.416C93.3712 47.4661 93.7608 48.7191 93.7509 50.0009Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Marquee animation clone
+            const marqueeContent = document.querySelector('.footer-marquee-content');
+            if (marqueeContent) {
+                const marqueeClone = marqueeContent.cloneNode(true);
+                marqueeContent.parentElement.appendChild(marqueeClone);
+            }
+        });
+    </script>
+</body>
+
+</html>
